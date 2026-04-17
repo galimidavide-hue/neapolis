@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="it" className={`${playfair.variable} ${inter.variable}`}>
       <body>
-        <main>{children}</main>
+        {children}
       </body>
     </html>
   )

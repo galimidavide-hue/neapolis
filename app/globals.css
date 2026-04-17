@@ -11,9 +11,6 @@
     @apply font-playfair;
   }
 
-  * {
-    @apply border-border;
-  }
 }
 
 @layer utilities {
