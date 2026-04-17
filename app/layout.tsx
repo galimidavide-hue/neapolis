@@ -29,6 +29,39 @@ export const metadata: Metadata = {
   },
 }
 
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Restaurant',
+  name: 'Neapolis Pizzeria Verace Napoletana',
+  description: "L'autentica pizza napoletana nel cuore della Calabria.",
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'Via Fausto Gullo 47',
+    addressLocality: 'Polistena',
+    addressRegion: 'RC',
+    postalCode: '89024',
+    addressCountry: 'IT',
+  },
+  telephone: '+393533199458',
+  email: 'neapolis.srls@libero.it',
+  servesCuisine: 'Pizza Napoletana',
+  priceRange: '€€',
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+      opens: '18:00',
+      closes: '00:00',
+    },
+  ],
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.9',
+    reviewCount: '257',
+    bestRating: '5',
+  },
+}
+
 export default function RootLayout({
   children,
 }: {
@@ -41,6 +74,10 @@ export default function RootLayout({
         {children}
         <Footer />
         <FloatingCTA />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </body>
     </html>
   )
