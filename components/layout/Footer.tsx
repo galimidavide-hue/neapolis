@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Logo from '@/components/ui/Logo'
 
 export default function Footer() {
   return (
@@ -6,10 +7,9 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <p className="font-playfair text-2xl font-bold text-bianco mb-1">Neapolis</p>
-            <p className="font-inter text-xs text-rosso uppercase tracking-widest mb-4">
-              Pizzeria Verace Napoletana
-            </p>
+            <Link href="/" className="block w-48 mb-4">
+              <Logo color="white" />
+            </Link>
             <p className="font-inter text-sm text-grigio leading-relaxed">
               L&apos;autentica pizza napoletana nel cuore della Calabria. #1 a Polistena.
             </p>

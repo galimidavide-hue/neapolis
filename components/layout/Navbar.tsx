@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
+import Logo from '@/components/ui/Logo'
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -32,9 +33,8 @@ export default function Navbar() {
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-          <Link href="/" className="flex flex-col leading-none">
-            <span className="font-playfair text-2xl font-bold text-bianco">Neapolis</span>
-            <span className="font-inter text-[10px] text-rosso uppercase tracking-widest">Pizzeria Verace Napoletana</span>
+          <Link href="/" className="w-40 sm:w-48 transition-transform hover:scale-105">
+            <Logo color="white" />
           </Link>
 
           <nav className="hidden md:flex items-center gap-8">
