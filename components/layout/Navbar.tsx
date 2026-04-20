@@ -12,6 +12,38 @@ const navLinks = [
   { href: '/prenota', label: 'Prenota' },
 ]
 
+const socialLinks = [
+  {
+    href: 'https://instagram.com/neapolis_polistena',
+    label: 'Instagram',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.75} strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4">
+        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+        <circle cx="12" cy="12" r="4" />
+        <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none" />
+      </svg>
+    ),
+  },
+  {
+    href: 'https://facebook.com/neapolispolistena',
+    label: 'Facebook',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
+        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+      </svg>
+    ),
+  },
+  {
+    href: 'https://tiktok.com/@neapolis_polistena',
+    label: 'TikTok',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
+        <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z" />
+      </svg>
+    ),
+  },
+]
+
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
@@ -51,6 +83,20 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
+            <div className="flex items-center gap-3 border-l border-bianco/20 pl-6">
+              {socialLinks.map((s) => (
+                <a
+                  key={s.label}
+                  href={s.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={s.label}
+                  className="text-bianco/50 hover:text-bianco transition-colors"
+                >
+                  {s.icon}
+                </a>
+              ))}
+            </div>
             <Link
               href="/prenota"
               className="bg-rosso text-white font-inter text-sm font-semibold px-5 py-2 rounded-full hover:bg-rosso/90 transition-colors"
@@ -105,6 +151,20 @@ export default function Navbar() {
               >
                 Prenota Ora
               </Link>
+              <div className="flex items-center gap-5 mt-4 pt-4 border-t border-border">
+                {socialLinks.map((s) => (
+                  <a
+                    key={s.label}
+                    href={s.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={s.label}
+                    className="text-grigio hover:text-bianco transition-colors"
+                  >
+                    {s.icon}
+                  </a>
+                ))}
+              </div>
             </motion.nav>
           </>
         )}
