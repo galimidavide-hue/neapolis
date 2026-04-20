@@ -5,7 +5,7 @@ import { menuItems, categories, MenuCategory } from '@/data/menu'
 import MenuCard from './MenuCard'
 
 export default function MenuTabs() {
-  const [active, setActive] = useState<MenuCategory>('classiche')
+  const [active, setActive] = useState<MenuCategory>('antipasti')
 
   const filtered = menuItems.filter((item) => item.category === active)
 

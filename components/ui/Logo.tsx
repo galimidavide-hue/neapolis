@@ -12,7 +12,7 @@ export default function Logo({ color = 'white', className = '' }: LogoProps) {
       alt="Neapolis Pizzeria Verace Napoletana"
       width={240}
       height={96}
-      className={`w-full h-auto ${color === 'white' ? 'brightness-0 invert' : ''} ${className}`.trim()}
+      className={`h-auto max-w-full ${color === 'white' ? 'brightness-0 invert' : ''} ${className}`.trim()}
     />
   )
 }

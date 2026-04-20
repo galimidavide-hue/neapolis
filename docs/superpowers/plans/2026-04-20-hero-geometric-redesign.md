@@ -1,3 +1,29 @@
+# Hero Geometric Redesign Implementation Plan
+
+> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+
+**Goal:** Add animated geometric ellipse shapes (brand colors rosso/oro) and a pill badge over the existing parallax photo Hero.
+
+**Architecture:** Extract an `ElegantShape` sub-component inside `Hero.tsx`, render 5 floating ellipses above the photo overlay using absolute positioning and Framer Motion, replace the plain "Polistena, Calabria" text with an animated pill badge.
+
+**Tech Stack:** Next.js 14 App Router, Framer Motion (already installed), Tailwind CSS custom tokens (`rosso`, `oro`, `bianco`, `nero`)
+
+---
+
+### Task 1: Add ElegantShape component and pill badge to Hero.tsx
+
+**Files:**
+- Modify: `components/home/Hero.tsx`
+
+- [ ] **Step 1: Open Hero.tsx and locate the section structure**
+
+File: `components/home/Hero.tsx` — the parallax photo lives in the `<motion.div style={{ y }}>` block. The badge text "Polistena, Calabria" is a `<motion.p>` at line ~38.
+
+- [ ] **Step 2: Replace Hero.tsx with the updated version**
+
+Replace the full file content with:
+
+```tsx
 'use client'
 
 import { motion, useScroll, useTransform } from 'framer-motion'
@@ -207,3 +233,36 @@ export default function Hero() {
     </section>
   )
 }
+```
+
+- [ ] **Step 3: Verify `cn` utility exists**
+
+Run: `ls /Users/davidegalimi/Documents/PROGETTI\ ANTIGRAVITY/Neapolis/lib/utils.ts`
+
+If missing, create `lib/utils.ts`:
+```ts
+import { clsx, type ClassValue } from 'clsx'
+import { twMerge } from 'tailwind-merge'
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs))
+}
+```
+Then install: `npm install clsx tailwind-merge`
+
+- [ ] **Step 4: Verify `rosso` and `oro` tokens are in Tailwind config**
+
+Run: `grep -n "rosso\|oro" tailwind.config.ts`
+
+Expected output includes `rosso: '#E63B2E'` and `oro: '#F5A623'`. If missing, add under `theme.extend.colors`.
+
+- [ ] **Step 5: Build to check TypeScript/lint**
+
+Run: `npm run build`
+Expected: exits 0, no TypeScript errors.
+
+- [ ] **Step 6: Commit**
+
+```bash
+git add components/home/Hero.tsx
+git commit -m "feat: add geometric animated shapes and pill badge to Hero"
+```

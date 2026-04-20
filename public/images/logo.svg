@@ -1,0 +1,27 @@
+<svg width="400" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Top Flourish -->
+  <path d="M120 40 C 140 20, 180 20, 200 45 C 220 20, 260 20, 280 40" stroke="currentColor" stroke-width="2" fill="none" />
+  <circle cx="200" cy="35" r="3" fill="currentColor" />
+  <circle cx="200" cy="45" r="3" fill="currentColor" />
+  <path d="M110 45 Q 115 35, 125 40" stroke="currentColor" stroke-width="2" fill="none" />
+  <path d="M290 45 Q 285 35, 275 40" stroke="currentColor" stroke-width="2" fill="none" />
+  <path d="M110 45 C 100 45, 95 55, 105 55" stroke="currentColor" stroke-width="2" fill="none" />
+  <path d="M290 45 C 300 45, 305 55, 295 55" stroke="currentColor" stroke-width="2" fill="none" />
+
+  <!-- Main Text "NEAPOLIS" -->
+  <text x="200" y="110" font-family="Playfair Display, serif" font-size="64" font-weight="900" text-anchor="middle" fill="currentColor" style="letter-spacing: 0.05em;">NEAPOLIS</text>
+  <!-- Inline effect (simplified as a white stroke or similar) -->
+  <text x="200" y="110" font-family="Playfair Display, serif" font-size="64" font-weight="900" text-anchor="middle" fill="none" stroke="black" stroke-width="0.5" opacity="0.5" style="letter-spacing: 0.05em;">NEAPOLIS</text>
+
+  <!-- Sub Text "PIZZERIA VERACE NAPOLETANA" -->
+  <text x="200" y="145" font-family="Inter, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="currentColor" style="letter-spacing: 0.2em; text-transform: uppercase;">PIZZERIA VERACE NAPOLETANA</text>
+
+  <!-- Bottom Flourish (flipped) -->
+  <g transform="translate(0, 190) scale(1, -1)">
+    <path d="M120 20 C 140 0, 180 0, 200 25 C 220 0, 260 0, 280 20" stroke="currentColor" stroke-width="2" fill="none" />
+    <path d="M110 25 Q 115 15, 125 20" stroke="currentColor" stroke-width="2" fill="none" />
+    <path d="M290 25 Q 285 15, 275 20" stroke="currentColor" stroke-width="2" fill="none" />
+    <path d="M110 25 C 100 25, 95 35, 105 35" stroke="currentColor" stroke-width="2" fill="none" />
+    <path d="M290 25 C 300 25, 305 35, 295 35" stroke="currentColor" stroke-width="2" fill="none" />
+  </g>
+</svg>

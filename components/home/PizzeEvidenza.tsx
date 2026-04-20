@@ -35,11 +35,6 @@ export default function PizzeEvidenza() {
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
-                {pizza.glutenFree && (
-                  <span className="absolute top-3 left-3 bg-green-600 text-white font-inter text-xs font-bold px-2 py-1 rounded-full">
-                    Senza Glutine
-                  </span>
-                )}
               </div>
 
               <div className="p-5">
@@ -48,7 +43,7 @@ export default function PizzeEvidenza() {
                   <span className="font-inter text-sm font-bold text-oro ml-2 flex-shrink-0">€{pizza.price}</span>
                 </div>
                 <p className="font-inter text-xs text-grigio leading-relaxed line-clamp-2">
-                  {pizza.ingredients.join(', ')}
+                  {pizza.description}
                 </p>
               </div>
             </motion.div>
