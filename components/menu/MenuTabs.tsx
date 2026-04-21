@@ -13,7 +13,20 @@ export default function MenuTabs() {
     <div>
       <div className="sticky top-16 z-20 bg-nero/90 backdrop-blur-md border-b border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex overflow-x-auto gap-0 scrollbar-hide">
+          {/* Mobile: dropdown */}
+          <div className="md:hidden py-3">
+            <select
+              value={active}
+              onChange={(e) => setActive(e.target.value as MenuCategory)}
+              className="w-full bg-card border border-border text-bianco font-inter text-sm font-medium rounded-xl px-4 py-3 appearance-none focus:outline-none focus:border-rosso transition-colors"
+            >
+              {categories.map((cat) => (
+                <option key={cat.id} value={cat.id}>{cat.label}</option>
+              ))}
+            </select>
+          </div>
+          {/* Desktop: tab bar */}
+          <div className="hidden md:flex overflow-x-auto gap-0 scrollbar-hide">
             {categories.map((cat) => (
               <button
                 key={cat.id}
