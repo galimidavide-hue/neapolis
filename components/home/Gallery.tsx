@@ -5,12 +5,12 @@ import Image from 'next/image'
 import SectionTitle from '@/components/ui/SectionTitle'
 
 const photos = [
-  { src: '/images/gallery/pizza-1.jpg', alt: 'Pizza napoletana' },
-  { src: '/images/gallery/pizza-2.jpg', alt: 'Margherita verace' },
-  { src: '/images/gallery/pizza-3.jpg', alt: 'Pizza in forno' },
-  { src: '/images/gallery/pizza-4.jpg', alt: 'Diavola piccante' },
-  { src: '/images/gallery/pizza-5.jpg', alt: 'Forno a legna' },
-  { src: '/images/gallery/pizza-6.jpg', alt: 'Pizzaiolo al lavoro' },
+  { src: '/images/menu/stella-di-napoli.jpg', alt: 'Stella di Napoli' },
+  { src: '/images/menu/tarallona.jpg', alt: 'Tarallona' },
+  { src: '/images/menu/margherita.jpg', alt: 'Margherita verace' },
+  { src: '/images/menu/tropeana.jpg', alt: 'Tropeana' },
+  { src: '/images/menu/brontina.jpg', alt: 'Brontina' },
+  { src: '/images/menu/salsiccia-friarielli.jpg', alt: 'Salsiccia e Friarielli' },
 ]
 
 export default function Gallery() {
