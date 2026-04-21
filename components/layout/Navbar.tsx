@@ -25,7 +25,7 @@ const socialLinks = [
     ),
   },
   {
-    href: 'https://facebook.com/neapolispolistena',
+    href: 'https://www.facebook.com/neapolispizzeriaverace',
     label: 'Facebook',
     icon: (
       <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
