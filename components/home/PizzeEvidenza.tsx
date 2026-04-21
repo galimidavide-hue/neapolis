@@ -18,7 +18,7 @@ export default function PizzeEvidenza() {
         />
 
         <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {featuredItems.map((pizza, i) => (
+          {featuredItems.slice(0, 8).map((pizza, i) => (
             <motion.div
               key={pizza.id}
               initial={{ opacity: 0, y: 30 }}
