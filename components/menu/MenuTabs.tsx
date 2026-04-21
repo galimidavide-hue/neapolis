@@ -5,9 +5,9 @@ import { menuItems, categories, MenuCategory } from '@/data/menu'
 import MenuCard from './MenuCard'
 
 export default function MenuTabs() {
-  const [active, setActive] = useState<MenuCategory>('antipasti')
+  const [active, setActive] = useState<MenuCategory | 'all'>('all')
 
-  const filtered = menuItems.filter((item) => item.category === active)
+  const filtered = active === 'all' ? menuItems : menuItems.filter((item) => item.category === active)
 
   return (
     <div>
@@ -17,9 +17,10 @@ export default function MenuTabs() {
           <div className="md:hidden py-3">
             <select
               value={active}
-              onChange={(e) => setActive(e.target.value as MenuCategory)}
+              onChange={(e) => setActive(e.target.value as MenuCategory | 'all')}
               className="w-full bg-card border border-border text-bianco font-inter text-sm font-medium rounded-xl px-4 py-3 appearance-none focus:outline-none focus:border-rosso transition-colors"
             >
+              <option value="all">— Tutte le categorie —</option>
               {categories.map((cat) => (
                 <option key={cat.id} value={cat.id}>{cat.label}</option>
               ))}
@@ -27,14 +28,20 @@ export default function MenuTabs() {
           </div>
           {/* Desktop: tab bar */}
           <div className="hidden md:flex overflow-x-auto gap-0 scrollbar-hide">
+            <button
+              onClick={() => setActive('all')}
+              className={`flex-shrink-0 font-inter text-sm font-medium px-6 py-4 border-b-2 transition-all ${
+                active === 'all' ? 'border-rosso text-rosso' : 'border-transparent text-grigio hover:text-bianco'
+              }`}
+            >
+              Tutto il menu
+            </button>
             {categories.map((cat) => (
               <button
                 key={cat.id}
                 onClick={() => setActive(cat.id)}
                 className={`flex-shrink-0 font-inter text-sm font-medium px-6 py-4 border-b-2 transition-all ${
-                  active === cat.id
-                    ? 'border-rosso text-rosso'
-                    : 'border-transparent text-grigio hover:text-bianco'
+                  active === cat.id ? 'border-rosso text-rosso' : 'border-transparent text-grigio hover:text-bianco'
                 }`}
               >
                 {cat.label}
