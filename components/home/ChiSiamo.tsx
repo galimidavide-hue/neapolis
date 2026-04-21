@@ -18,8 +18,8 @@ export default function ChiSiamo() {
           >
             <div className="relative h-[480px] rounded-2xl overflow-hidden">
               <Image
-                src="/images/pizzaiolo.jpg"
-                alt="Il nostro pizzaiolo al lavoro"
+                src="/images/ristorante.jpg"
+                alt="L'interno accogliente del ristorante Neapolis"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"
