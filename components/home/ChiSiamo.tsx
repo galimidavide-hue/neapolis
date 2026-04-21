@@ -18,7 +18,7 @@ export default function ChiSiamo() {
           >
             <div className="relative h-[480px] rounded-2xl overflow-hidden">
               <Image
-                src="/images/ristorante.jpg"
+                src="/images/interno.jpg"
                 alt="L'interno accogliente del ristorante Neapolis"
                 fill
                 className="object-cover"
