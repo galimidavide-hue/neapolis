@@ -197,7 +197,7 @@ export const menuItems: MenuItem[] = [
     description: 'Pomodoro San Marzano DOP, fiordilatte di Agerola, filetti di tonno del Mediterraneo, cipolla di Tropea, basilico, olio d\'oliva',
     price: 9,
     category: 'classiche',
-    image: '/images/menu/margherita.jpg',
+    image: '/images/menu/tonno-cipolla.jpg',
   },
   {
     id: 'orto-del-giorno',
@@ -574,7 +574,7 @@ export const menuItems: MenuItem[] = [
     description: '1 pezzo',
     price: 3,
     category: 'friggitoria',
-    image: '/images/menu/frittatine.jpg',
+    image: '/images/menu/frittatina.jpg',
   },
   {
     id: 'crocchettone-fritto',
