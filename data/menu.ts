@@ -105,7 +105,7 @@ export const menuItems: MenuItem[] = [
     description: 'Pomodoro San Marzano DOP, fiordilatte di Agerola, acciughe di Cetara, basilico, olio d\'oliva',
     price: 5.5,
     category: 'veraci',
-    image: '/images/menu/margherita.jpg',
+    image: '/images/menu/napoli.jpg',
   },
   {
     id: 'margherita-gialla',
