@@ -181,7 +181,7 @@ export const menuItems: MenuItem[] = [
     description: 'Pomodoro San Marzano DOP, fiordilatte di Agerola, prosciutto cotto, funghi champignon, carciofi, salame Napoli, olive taggiasche, basilico, olio d\'oliva',
     price: 9,
     category: 'classiche',
-    image: '/images/menu/capricciosa.jpg',
+    image: '/images/menu/quattro-stagioni.jpg',
   },
   {
     id: 'wurstel-patatine',
