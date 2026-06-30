@@ -61,7 +61,7 @@ export const menuItems: MenuItem[] = [
     description: '3 montanarine fritte farcite a piacere dallo chef',
     price: 5,
     category: 'antipasti',
-    image: '/images/menu/montanara.jpg',
+    image: '/images/menu/tris-montanarine.jpg',
   },
   {
     id: 'taglieri',
@@ -96,7 +96,7 @@ export const menuItems: MenuItem[] = [
     description: 'Pomodoro San Marzano DOP, provola di Agerola affumicata, pepe nero, grana, basilico, olio d\'oliva',
     price: 7,
     category: 'veraci',
-    image: '/images/menu/provola-pepe.jpg',
+    image: '/images/menu/provola-pepe-foto.jpg',
     featured: true,
   },
   {
