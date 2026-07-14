@@ -338,7 +338,7 @@ export const menuItems: MenuItem[] = [
     description: 'Provola di Agerola affumicata, pesto di basilico, pomodorini pachino, patate lesse, olio d\'oliva',
     price: 8.5,
     category: 'pregiate',
-    image: '/images/menu/provola-pepe.jpg',
+    image: '/images/menu/pesto.jpg',
   },
   {
     id: 'sciurillona',
