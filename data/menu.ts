@@ -213,7 +213,7 @@ export const menuItems: MenuItem[] = [
     description: 'Fiordilatte di Agerola, Gorgonzola, provola di Agerola, emmenthal, basilico, olio d\'oliva',
     price: 8,
     category: 'classiche',
-    image: '/images/menu/provola-pepe.jpg',
+    image: '/images/menu/quattro-formaggi.jpg',
   },
 
   // FUSION PARTENOPEE MEDITERRANEE
@@ -231,7 +231,7 @@ export const menuItems: MenuItem[] = [
     description: 'Pomodoro San Marzano DOP, fiordilatte di Agerola, \'nduja di Spilinga, basilico, olio d\'oliva',
     price: 7,
     category: 'fusion',
-    image: '/images/menu/diavola.jpg',
+    image: '/images/menu/nduja.jpg',
     featured: true,
   },
   {
@@ -330,7 +330,7 @@ export const menuItems: MenuItem[] = [
     description: 'Ragù di pomodoro San Marzano DOP, fiordilatte di Agerola, ciuffi di ricotta, polpette, basilico, olio d\'oliva',
     price: 8.5,
     category: 'pregiate',
-    image: '/images/menu/margherita.jpg',
+    image: '/images/menu/purpettella.jpg',
   },
   {
     id: 'pesto',
@@ -346,7 +346,7 @@ export const menuItems: MenuItem[] = [
     description: 'Provola di Agerola affumicata, fiori di zucca, ciuffi di ricotta, salame Napoli, basilico, olio d\'oliva',
     price: 8.5,
     category: 'pregiate',
-    image: '/images/menu/margherita.jpg',
+    image: '/images/menu/sciurillona.jpg',
   },
   {
     id: 'parmigiana-pizza',
