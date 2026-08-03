@@ -16,6 +16,10 @@ const PANUOZZI_BANNER = [
   '/images/menu/panuozzo-americano.jpg',
 ]
 
+const ANTIPASTI_BANNER = [
+  '/images/menu/antipasti-banner-1.jpg',
+]
+
 function MenuCardNoImage({ item }: { item: MenuItem }) {
   return (
     <div className="bg-card border border-border rounded-2xl overflow-hidden hover:border-rosso/40 transition-all duration-300 hover:shadow-lg hover:shadow-rosso/10 hover:scale-[1.02]">
@@ -110,9 +114,22 @@ export default function MenuTabs() {
             ))}
           </div>
         )}
+        {active === 'antipasti' && (
+          <div className="mb-10 rounded-2xl overflow-hidden">
+            <div className="relative h-64 sm:h-80">
+              <Image
+                src={ANTIPASTI_BANNER[0]}
+                alt="Antipasti Neapolis"
+                fill
+                className="object-cover"
+                sizes="100vw"
+              />
+            </div>
+          </div>
+        )}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {filtered.map((item) => (
-            active === 'calzoni' || active === 'panuozzi'
+            active === 'calzoni' || active === 'panuozzi' || active === 'antipasti'
               ? <MenuCardNoImage key={item.id} item={item} />
               : <MenuCard key={item.id} item={item} />
           ))}
