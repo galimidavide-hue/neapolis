@@ -13,8 +13,8 @@ const badges = [
 ]
 
 const pdfs = [
-  { label: '50 Top Pizza 2018', href: '/awards/certificato-2018.pdf' },
-  { label: '50 Top Pizza 2019', href: '/awards/certificato-2019.pdf' },
+  { label: '50 Top Pizza Italia 2026', href: '/awards/certificato-2018.pdf' },
+  { label: '50 Top Pizza Italia 2026', href: '/awards/certificato-2019.pdf' },
 ]
 
 export default function Premi() {
@@ -40,7 +40,7 @@ export default function Premi() {
           <div className="mt-6 w-16 h-px bg-rosso mx-auto" />
         </motion.div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-5 mb-12">
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 mb-12">
           {badges.map((b, i) => (
             <motion.div
               key={i}
@@ -48,7 +48,7 @@ export default function Premi() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.08 }}
-              className="bg-card border border-border rounded-2xl overflow-hidden flex items-center justify-center p-4 hover:border-oro/40 transition-colors"
+              className="bg-card border border-border rounded-2xl overflow-hidden flex items-center justify-center p-6 hover:border-oro/40 transition-colors"
             >
               <div className="relative w-full aspect-square">
                 <Image
@@ -56,7 +56,7 @@ export default function Premi() {
                   alt={b.alt}
                   fill
                   className="object-contain"
-                  sizes="(max-width: 640px) 45vw, (max-width: 1024px) 30vw, 15vw"
+                  sizes="(max-width: 640px) 45vw, (max-width: 1024px) 33vw"
                 />
               </div>
             </motion.div>
