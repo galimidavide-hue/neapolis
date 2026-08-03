@@ -167,6 +167,12 @@ export default function Hero() {
             >
               Scopri il Menu →
             </Link>
+            <button
+              onClick={() => document.getElementById('premi')?.scrollIntoView({ behavior: 'smooth' })}
+              className="border border-oro/50 text-oro font-inter font-semibold px-8 py-4 rounded-full hover:border-oro hover:bg-oro/10 transition-all"
+            >
+              🏆 Premi e Riconoscimenti
+            </button>
           </div>
 
           <motion.div
