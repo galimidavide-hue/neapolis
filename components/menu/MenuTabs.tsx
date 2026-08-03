@@ -11,6 +11,11 @@ const CALZONI_BANNER = [
   '/images/menu/calzoni-banner-3.jpg',
 ]
 
+const PANUOZZI_BANNER = [
+  '/images/menu/panuozzi-banner-1.jpg',
+  '/images/menu/panuozzo-americano.jpg',
+]
+
 function MenuCardNoImage({ item }: { item: MenuItem }) {
   return (
     <div className="bg-card border border-border rounded-2xl overflow-hidden hover:border-rosso/40 transition-all duration-300 hover:shadow-lg hover:shadow-rosso/10 hover:scale-[1.02]">
@@ -90,9 +95,24 @@ export default function MenuTabs() {
             ))}
           </div>
         )}
+        {active === 'panuozzi' && (
+          <div className="grid grid-cols-2 gap-3 mb-10 rounded-2xl overflow-hidden">
+            {PANUOZZI_BANNER.map((src, i) => (
+              <div key={i} className="relative h-56 sm:h-72">
+                <Image
+                  src={src}
+                  alt={`Panuozzi Neapolis ${i + 1}`}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 640px) 50vw, 40vw"
+                />
+              </div>
+            ))}
+          </div>
+        )}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {filtered.map((item) => (
-            active === 'calzoni'
+            active === 'calzoni' || active === 'panuozzi'
               ? <MenuCardNoImage key={item.id} item={item} />
               : <MenuCard key={item.id} item={item} />
           ))}
