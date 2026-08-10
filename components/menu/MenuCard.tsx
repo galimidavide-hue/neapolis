@@ -4,7 +4,7 @@ import { MenuItem } from '@/data/menu'
 export default function MenuCard({ item }: { item: MenuItem }) {
   return (
     <div className="group bg-card border border-border rounded-2xl overflow-hidden hover:border-rosso/40 transition-all duration-300 hover:shadow-lg hover:shadow-rosso/10 hover:scale-[1.02]">
-      <div className="relative h-44 overflow-hidden">
+      <div className="relative aspect-square overflow-hidden">
         <Image
           src={item.image}
           alt={item.name}
