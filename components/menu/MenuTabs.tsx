@@ -91,15 +91,47 @@ export default function MenuTabs() {
           </div>
         )}
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filtered.map((item) => (
-            active === 'calzoni' || active === 'panuozzi' || active === 'friggitoria'
-              ? <MenuCardNoImage key={item.id} item={item} />
-              : active === 'antipasti' && !['tris-montanarine', 'taglieri', 'crocchetton', 'antipasto-neapolis', 'bombette-antipasto', 'salumi-formaggi'].includes(item.id)
-              ? <MenuCardNoImage key={item.id} item={item} />
-              : <MenuCard key={item.id} item={item} />
-          ))}
-        </div>
+        {active === 'dolci' && (() => {
+          const poppella = filtered.filter((i) => i.id === 'fiocchi-neve')
+          const altri = filtered.filter((i) => i.id !== 'fiocchi-neve')
+          return (
+            <>
+              {/* Sottosezione Poppella */}
+              <div className="mb-10">
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="font-inter text-xs font-bold tracking-[0.2em] uppercase text-oro border border-oro/50 px-3 py-1 rounded-full">
+                    Esclusiva da noi
+                  </span>
+                  <div className="flex-1 h-px bg-oro/20" />
+                </div>
+                <div className="rounded-2xl overflow-hidden mb-6">
+                  <div className="relative h-64 sm:h-80 w-full">
+                    <Image src="/images/menu/poppella.jpg" alt="Dolci Poppella" fill className="object-cover" sizes="100vw" />
+                  </div>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {poppella.map((item) => <MenuCardNoImage key={item.id} item={item} />)}
+                </div>
+              </div>
+              {/* Altri dolci */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {altri.map((item) => <MenuCardNoImage key={item.id} item={item} />)}
+              </div>
+            </>
+          )
+        })()}
+
+        {active !== 'dolci' && (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {filtered.map((item) => (
+              active === 'calzoni' || active === 'panuozzi' || active === 'friggitoria'
+                ? <MenuCardNoImage key={item.id} item={item} />
+                : active === 'antipasti' && !['tris-montanarine', 'taglieri', 'crocchetton', 'antipasto-neapolis', 'bombette-antipasto', 'salumi-formaggi'].includes(item.id)
+                ? <MenuCardNoImage key={item.id} item={item} />
+                : <MenuCard key={item.id} item={item} />
+            ))}
+          </div>
+        )}
       </div>
     </div>
   )
