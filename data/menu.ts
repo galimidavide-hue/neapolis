@@ -45,7 +45,7 @@ export const menuItems: MenuItem[] = [
     description: 'Crocchettone ripieno a scelta: mortadella e pesto di pistacchio, salsiccia e friarielli, pancetta croccante, fonduta di parmigiano',
     price: 6,
     category: 'antipasti',
-    image: '/images/menu/frittatine.jpg',
+    image: '/images/menu/crocchetton.jpg',
   },
   {
     id: 'bombette-antipasto',
