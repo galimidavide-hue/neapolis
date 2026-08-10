@@ -205,7 +205,7 @@ export const menuItems: MenuItem[] = [
     description: 'Pomodoro San Marzano DOP/bianca, fiordilatte di Agerola, verdure di stagione, basilico, olio d\'oliva',
     price: 7,
     category: 'classiche',
-    image: '/images/menu/margherita.jpg',
+    image: '/images/menu/orto-del-giorno.jpg',
   },
   {
     id: 'quattro-formaggi',
