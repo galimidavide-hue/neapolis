@@ -208,7 +208,7 @@ export default function Hero() {
                 className="rounded-md"
               />
               <span className="font-inter text-xs text-bianco/70 leading-tight">
-                <strong className="text-bianco block">50 Top Pizza Italia 2025</strong>
+                <strong className="text-bianco block">50 Top Pizza Italia 2026</strong>
                 Pizzerie Eccellenti
               </span>
             </a>
