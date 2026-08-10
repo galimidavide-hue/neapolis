@@ -322,7 +322,7 @@ export const menuItems: MenuItem[] = [
     description: 'Fiordilatte di Agerola, prosciutto cotto, crocchè di patate, basilico, olio d\'oliva',
     price: 8.5,
     category: 'pregiate',
-    image: '/images/menu/margherita.jpg',
+    image: '/images/menu/crocchettona.jpg',
   },
   {
     id: 'purpettella',
