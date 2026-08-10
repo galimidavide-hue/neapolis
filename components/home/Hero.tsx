@@ -195,7 +195,7 @@ export default function Hero() {
             </div>
 
             <a
-              href="https://www.50toppizza.it/referenza/neapolis/"
+              href="https://www.50toppizza.it/referenza/neapolis-2-2026/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 border-l border-bianco/20 pl-5 hover:opacity-80 transition-opacity"
