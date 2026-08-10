@@ -404,7 +404,7 @@ export const menuItems: MenuItem[] = [
     description: 'Tronchetto di pizza ripieno di fiordilatte di Agerola, emmenthal, guarnito con prosciutto crudo di Parma, rucola, pomodorini pachino, scaglie di grana',
     price: 9.5,
     category: 'pregiate',
-    image: '/images/menu/san-daniele.jpg',
+    image: '/images/menu/tronchetto.jpg',
   },
   {
     id: 'bocconcina',
