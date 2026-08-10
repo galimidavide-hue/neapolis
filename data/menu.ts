@@ -412,7 +412,7 @@ export const menuItems: MenuItem[] = [
     description: 'Cornicione ripieno di ricotta di bufala, pomodoro San Marzano DOP, rucola, pomodorini pachino, prosciutto crudo di Parma, bocconcini di fiordilatte di Agerola, basilico, olio d\'oliva',
     price: 13,
     category: 'pregiate',
-    image: '/images/menu/stella-di-napoli.jpg',
+    image: '/images/menu/bocconcina.jpg',
   },
   {
     id: 'tropeana',
