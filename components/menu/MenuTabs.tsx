@@ -75,21 +75,6 @@ export default function MenuTabs() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {active === 'calzoni' && (
-          <div className="grid grid-cols-3 gap-3 mb-10 rounded-2xl overflow-hidden">
-            {CALZONI_BANNER.map((src, i) => (
-              <div key={i} className="relative h-56 sm:h-72">
-                <Image
-                  src={src}
-                  alt={`Calzoni Neapolis ${i + 1}`}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 640px) 33vw, 25vw"
-                />
-              </div>
-            ))}
-          </div>
-        )}
         {active === 'panuozzi' && (
           <div className="grid grid-cols-2 gap-3 mb-10 rounded-2xl overflow-hidden">
             {PANUOZZI_BANNER.map((src, i) => (
