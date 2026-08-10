@@ -272,7 +272,7 @@ export const menuItems: MenuItem[] = [
     description: 'Pomodoro San Marzano DOP, fiordilatte di Agerola, speck Alto Adige IGP, rucola, pomodorini pachino, scaglie di grana, basilico, olio d\'oliva',
     price: 9,
     category: 'fusion',
-    image: '/images/menu/san-daniele.jpg',
+    image: '/images/menu/tirolese.jpg',
   },
   {
     id: 'marea',
