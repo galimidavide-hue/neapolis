@@ -564,7 +564,7 @@ export const menuItems: MenuItem[] = [
     description: 'Ragù di pomodoro napoletano, provola di Agerola affumicata, pepe nero, grana, basilico, olio d\'oliva',
     price: 9,
     category: 'fritte',
-    image: '/images/menu/montanara.jpg',
+    image: '/images/menu/scarpetta.jpg',
   },
 
   // FRIGGITORIA
