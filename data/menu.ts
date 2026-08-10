@@ -547,7 +547,7 @@ export const menuItems: MenuItem[] = [
     description: 'Pizza ripiena di fiordilatte di Agerola, pomodoro San Marzano DOP, grana, basilico, pepe nero, olio d\'oliva',
     price: 6,
     category: 'fritte',
-    image: '/images/menu/frittatine.jpg',
+    image: '/images/menu/pizza-fritta-pomodoro.jpg',
   },
   {
     id: 'tarallona',
