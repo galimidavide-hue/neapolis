@@ -223,7 +223,7 @@ export const menuItems: MenuItem[] = [
     description: 'Salsiccia napoletana a punta di coltello, peperoni, fiordilatte di Agerola, basilico, olio d\'oliva',
     price: 7.5,
     category: 'fusion',
-    image: '/images/menu/salsiccia-friarielli.jpg',
+    image: '/images/menu/sp.jpg',
   },
   {
     id: 'nduja',
