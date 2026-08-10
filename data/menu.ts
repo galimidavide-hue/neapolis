@@ -29,7 +29,7 @@ export const menuItems: MenuItem[] = [
     description: 'Frittatina napoletana, Parmigiana di melanzane, Montanarine, Cuoppo terra, Mozzarella di Bufala',
     price: 10,
     category: 'antipasti',
-    image: '/images/menu/neapolis-antipasto.jpg',
+    image: '/images/menu/antipasto-neapolis.jpg',
   },
   {
     id: 'salumi-formaggi',
