@@ -370,7 +370,7 @@ export const menuItems: MenuItem[] = [
     description: 'Fiordilatte di Agerola, funghi porcini, prosciutto crudo di Parma, rucola, essenza di tartufo, burrata affumicata, scaglie di grana, basilico, olio d\'oliva',
     price: 13,
     category: 'pregiate',
-    image: '/images/menu/neapolis-antipasto.jpg',
+    image: '/images/menu/neapolis-pregiata.jpg',
     featured: true,
   },
   {
