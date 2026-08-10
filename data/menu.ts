@@ -37,7 +37,7 @@ export const menuItems: MenuItem[] = [
     description: 'Salumi e formaggi misti',
     price: 10,
     category: 'antipasti',
-    image: '/images/menu/neapolis-antipasto.jpg',
+    image: '/images/menu/salumi-formaggi.jpg',
   },
   {
     id: 'crocchetton',
