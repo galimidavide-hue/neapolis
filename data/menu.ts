@@ -69,7 +69,7 @@ export const menuItems: MenuItem[] = [
     description: 'Percorso Napoli / Percorso Calabria',
     price: 25,
     category: 'antipasti',
-    image: '/images/menu/neapolis-antipasto.jpg',
+    image: '/images/menu/taglieri.jpg',
   },
 
   // LE VERACI NAPOLETANE
