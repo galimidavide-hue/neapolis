@@ -395,7 +395,7 @@ export const menuItems: MenuItem[] = [
     description: 'Doppio disco a forma di vulcano ripieno con ricotta, provola di Agerola affumicata, fiordilatte, \'nduja di Spilinga, bufala Campana DOP, basilico, olio d\'oliva',
     price: 13,
     category: 'pregiate',
-    image: '/images/menu/diavola.jpg',
+    image: '/images/menu/vesuvio.jpg',
     featured: true,
   },
   {
@@ -436,7 +436,7 @@ export const menuItems: MenuItem[] = [
     description: 'Pomodoro giallo San Marzano DOP, rucola, pomodorini del Piennolo del Vesuvio, prosciutto crudo di Parma, bocconcini di bufala Campana DOP, basilico, olio d\'oliva',
     price: 13,
     category: 'pregiate',
-    image: '/images/menu/del-piennolo.jpg',
+    image: '/images/menu/vesuviana.jpg',
   },
 
   // CALZONI
