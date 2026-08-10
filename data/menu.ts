@@ -53,7 +53,7 @@ export const menuItems: MenuItem[] = [
     description: 'Ricotta di bufala al pistacchio, mortadella, granella di pistacchio',
     price: 9,
     category: 'antipasti',
-    image: '/images/menu/frittatine.jpg',
+    image: '/images/menu/bombette-ripiene.jpg',
   },
   {
     id: 'tris-montanarine',

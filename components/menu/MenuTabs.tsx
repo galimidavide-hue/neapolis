@@ -107,7 +107,7 @@ export default function MenuTabs() {
           {filtered.map((item) => (
             active === 'calzoni' || active === 'panuozzi' || active === 'friggitoria'
               ? <MenuCardNoImage key={item.id} item={item} />
-              : active === 'antipasti' && !['tris-montanarine', 'taglieri', 'crocchetton', 'antipasto-neapolis'].includes(item.id)
+              : active === 'antipasti' && !['tris-montanarine', 'taglieri', 'crocchetton', 'antipasto-neapolis', 'bombette-antipasto'].includes(item.id)
               ? <MenuCardNoImage key={item.id} item={item} />
               : <MenuCard key={item.id} item={item} />
           ))}
