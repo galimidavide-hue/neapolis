@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import { menuItems, categories, MenuCategory, MenuItem } from '@/data/menu'
 import MenuCard from './MenuCard'
+import { MorphingText } from '@/components/ui/morphing-text'
 
 const CALZONI_BANNER = [
   '/images/menu/calzoni-banner-1.jpg',
@@ -101,10 +102,12 @@ export default function MenuTabs() {
             <>
               {/* Header Poppella */}
               <div className="text-center mb-8">
-                <p className="font-inter text-xs tracking-[0.25em] uppercase text-oro mb-2">Esclusiva da noi</p>
-                <h2 className="font-playfair text-3xl sm:text-4xl font-extrabold text-bianco">
-                  Poppella <span className="text-grigio font-normal text-2xl">in collaborazione con</span> Neapolis
-                </h2>
+                <p className="font-inter text-xs tracking-[0.25em] uppercase text-oro mb-3">Esclusiva da noi</p>
+                <MorphingText
+                  texts={['NEAPOLIS', 'POPPELLA']}
+                  className="text-bianco text-[2.5rem] sm:text-[3.5rem] lg:text-[5rem] h-20 sm:h-24 lg:h-28"
+                />
+                <p className="font-inter text-sm tracking-[0.15em] uppercase text-grigio mt-2">in collaborazione con</p>
                 <div className="mt-4 w-16 h-px bg-oro/40 mx-auto" />
               </div>
 
