@@ -36,8 +36,11 @@ function MenuCardNoImage({ item }: { item: MenuItem }) {
   )
 }
 
+const POPPELLA_IDS = ['fiocchi-neve']
+
 export default function MenuTabs() {
   const [active, setActive] = useState<MenuCategory | 'all'>('antipasti')
+  const [dolciOpen, setDolciOpen] = useState(false)
 
   const filtered = active === 'all' ? menuItems : menuItems.filter((item) => item.category === active)
 
@@ -92,31 +95,63 @@ export default function MenuTabs() {
         )}
 
         {active === 'dolci' && (() => {
-          const poppella = filtered.filter((i) => i.id === 'fiocchi-neve')
-          const altri = filtered.filter((i) => i.id !== 'fiocchi-neve')
+          const poppella = filtered.filter((i) => POPPELLA_IDS.includes(i.id))
+          const altri = filtered.filter((i) => !POPPELLA_IDS.includes(i.id))
           return (
             <>
-              {/* Sottosezione Poppella */}
-              <div className="mb-10">
-                <div className="flex items-center gap-3 mb-4">
-                  <span className="font-inter text-xs font-bold tracking-[0.2em] uppercase text-oro border border-oro/50 px-3 py-1 rounded-full">
-                    Esclusiva da noi
-                  </span>
-                  <div className="flex-1 h-px bg-oro/20" />
+              {/* Header Poppella */}
+              <div className="text-center mb-8">
+                <p className="font-inter text-xs tracking-[0.25em] uppercase text-oro mb-2">Esclusiva da noi</p>
+                <h2 className="font-playfair text-3xl sm:text-4xl font-extrabold text-bianco">
+                  Poppella <span className="text-grigio font-normal text-2xl">in collaborazione con</span> Neapolis
+                </h2>
+                <div className="mt-4 w-16 h-px bg-oro/40 mx-auto" />
+              </div>
+
+              {/* Split: foto + gusti */}
+              <div className="flex flex-col md:flex-row gap-6 mb-12 rounded-2xl overflow-hidden bg-card border border-border">
+                <div className="relative md:w-1/2 h-72 md:h-auto min-h-[320px]">
+                  <Image
+                    src="/images/menu/poppella.jpg"
+                    alt="Fiocchi di Neve Poppella"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
                 </div>
-                <div className="rounded-2xl overflow-hidden mb-6">
-                  <div className="relative h-64 sm:h-80 w-full">
-                    <Image src="/images/menu/poppella.jpg" alt="Dolci Poppella" fill className="object-cover" sizes="100vw" />
-                  </div>
+                <div className="md:w-1/2 p-6 flex flex-col justify-center gap-4">
+                  {poppella.map((item) => (
+                    <div key={item.id} className="border-b border-border pb-4 last:border-0 last:pb-0">
+                      <div className="flex items-start justify-between gap-2 mb-1">
+                        <h3 className="font-playfair text-xl font-bold text-bianco">{item.name}</h3>
+                        <span className="bg-oro/20 text-oro font-inter text-sm font-bold px-2 py-0.5 rounded-full flex-shrink-0">
+                          €{item.price}
+                        </span>
+                      </div>
+                      <p className="font-inter text-sm text-grigio leading-relaxed">{item.description}</p>
+                    </div>
+                  ))}
                 </div>
+              </div>
+
+              {/* Toggle I Dolci di Neapolis */}
+              <button
+                onClick={() => setDolciOpen((o) => !o)}
+                className="w-full flex items-center justify-between bg-card border border-border rounded-2xl px-6 py-4 mb-6 hover:border-rosso/40 transition-colors"
+              >
+                <span className="font-playfair text-xl font-bold text-bianco">I Dolci di Neapolis</span>
+                <svg
+                  className={`w-5 h-5 text-grigio transition-transform duration-300 ${dolciOpen ? 'rotate-180' : ''}`}
+                  fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              {dolciOpen && (
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {poppella.map((item) => <MenuCardNoImage key={item.id} item={item} />)}
+                  {altri.map((item) => <MenuCardNoImage key={item.id} item={item} />)}
                 </div>
-              </div>
-              {/* Altri dolci */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                {altri.map((item) => <MenuCardNoImage key={item.id} item={item} />)}
-              </div>
+              )}
             </>
           )
         })()}
