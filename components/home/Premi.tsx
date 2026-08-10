@@ -14,7 +14,7 @@ const badges = [
 
 const pdfs = [
   { label: '50 Top Pizza Italia 2026', href: '/awards/certificato-2018.pdf' },
-  { label: '50 Top Pizza Italia 2026', href: '/awards/certificato-2019.pdf' },
+  { label: '50 Top Pizza Italia 2025', href: '/awards/certificato-2019.pdf' },
 ]
 
 export default function Premi() {
@@ -40,7 +40,30 @@ export default function Premi() {
           <div className="mt-6 w-16 h-px bg-rosso mx-auto" />
         </motion.div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 mb-12">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="flex flex-wrap justify-center gap-4 mb-12"
+        >
+          {pdfs.map((p) => (
+            <a
+              key={p.href}
+              href={p.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 border border-oro/40 text-oro font-inter text-sm font-semibold px-6 py-3 rounded-full hover:bg-oro/10 transition-all"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+              </svg>
+              {p.label}
+            </a>
+          ))}
+        </motion.div>
+
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
           {badges.map((b, i) => (
             <motion.div
               key={i}
@@ -62,29 +85,6 @@ export default function Premi() {
             </motion.div>
           ))}
         </div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="flex flex-wrap justify-center gap-4"
-        >
-          {pdfs.map((p) => (
-            <a
-              key={p.href}
-              href={p.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 border border-oro/40 text-oro font-inter text-sm font-semibold px-6 py-3 rounded-full hover:bg-oro/10 transition-all"
-            >
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
-              </svg>
-              {p.label}
-            </a>
-          ))}
-        </motion.div>
       </div>
     </section>
   )
