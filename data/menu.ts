@@ -256,7 +256,7 @@ export const menuItems: MenuItem[] = [
     description: 'Pomodoro San Marzano DOP, fiordilatte di Agerola, \'nduja di Spilinga, cipolla di Tropea, olive taggiasche, basilico, olio d\'oliva',
     price: 8.5,
     category: 'fusion',
-    image: '/images/menu/diavola.jpg',
+    image: '/images/menu/calabrese.jpg',
   },
   {
     id: 'san-daniele',
