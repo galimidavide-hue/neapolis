@@ -314,7 +314,7 @@ export const menuItems: MenuItem[] = [
     description: 'Pomodoro San Marzano DOP, fiordilatte di Agerola, pancetta, melanzane, pecorino, peperoncino piccante, olio d\'oliva, basilico',
     price: 8.5,
     category: 'pregiate',
-    image: '/images/menu/diavola.jpg',
+    image: '/images/menu/hiroshima.jpg',
   },
   {
     id: 'crocchettona',
