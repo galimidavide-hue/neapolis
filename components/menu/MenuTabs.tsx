@@ -113,12 +113,13 @@ export default function MenuTabs() {
 
               {/* Split: foto + gusti */}
               <div className="flex flex-col md:flex-row gap-6 mb-12 rounded-2xl overflow-hidden bg-card border border-border">
-                <div className="relative md:w-1/2 h-72 md:h-auto min-h-[320px]">
+                <div className="md:w-1/2">
                   <Image
                     src="/images/menu/poppella.jpg"
                     alt="Fiocchi di Neve Poppella"
-                    fill
-                    className="object-cover"
+                    width={1920}
+                    height={2560}
+                    className="w-full h-auto"
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
                 </div>
