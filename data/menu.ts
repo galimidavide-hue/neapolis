@@ -10,6 +10,7 @@ export type MenuCategory =
   | 'friggitoria'
   | 'dolci'
   | 'bevande'
+  | 'vini'
 
 export interface MenuItem {
   id: string
@@ -728,6 +729,7 @@ export const categories: { id: MenuCategory; label: string }[] = [
   { id: 'fritte', label: 'Pizze Fritte' },
   { id: 'friggitoria', label: 'Friggitoria' },
   { id: 'dolci', label: 'Dolci' },
+  { id: 'vini', label: 'Carta dei Vini' },
 ]
 
 export const featuredItems = menuItems.filter((item) => item.featured)

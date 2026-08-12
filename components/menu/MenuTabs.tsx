@@ -4,7 +4,9 @@ import { useState } from 'react'
 import Image from 'next/image'
 import { menuItems, categories, MenuCategory, MenuItem } from '@/data/menu'
 import MenuCard from './MenuCard'
+import WineCard from './WineCard'
 import { MorphingText } from '@/components/ui/morphing-text'
+import { wineItems } from '@/data/wines'
 
 const CALZONI_BANNER = [
   '/images/menu/calzoni-banner-1.jpg',
@@ -79,6 +81,28 @@ export default function MenuTabs() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+        {/* Quick-access banner: visible on all tabs except vini */}
+        {active !== 'vini' && (
+          <button
+            onClick={() => setActive('vini')}
+            className="w-full flex items-center justify-between bg-card border border-border rounded-2xl px-5 py-4 mb-8 hover:border-oro/40 hover:bg-oro/5 transition-all group"
+          >
+            <div className="flex items-center gap-4">
+              <svg className="w-5 h-5 text-oro flex-shrink-0" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15M14.25 3.104c.251.023.501.05.75.082M19.8 15a2.25 2.25 0 01.198 2.146 2.25 2.25 0 01-2.088 1.329H6.09a2.25 2.25 0 01-2.087-1.329 2.25 2.25 0 01.198-2.146m15.6 0H4.2" />
+              </svg>
+              <div className="text-left">
+                <p className="font-playfair text-base font-bold text-bianco leading-none mb-0.5">Carta dei Vini</p>
+                <p className="font-inter text-xs text-grigio">Abbinamenti d&apos;autore · Tenuta Iuzzolini e Casa Criserà</p>
+              </div>
+            </div>
+            <svg className="w-4 h-4 text-grigio group-hover:text-oro transition-colors" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        )}
+
         {active === 'panuozzi' && (
           <div className="grid grid-cols-2 gap-3 mb-10 rounded-2xl overflow-hidden">
             {PANUOZZI_BANNER.map((src, i) => (
@@ -160,7 +184,25 @@ export default function MenuTabs() {
           )
         })()}
 
-        {active !== 'dolci' && (
+        {/* Carta dei Vini */}
+        {active === 'vini' && (
+          <>
+            <div className="text-center mb-12">
+              <p className="font-inter text-xs tracking-[0.25em] uppercase text-oro mb-2">Abbinamenti d&apos;autore</p>
+              <h2 className="font-playfair text-3xl sm:text-4xl font-bold text-bianco mb-3">Carta dei Vini</h2>
+              <p className="font-inter text-sm text-grigio max-w-xl mx-auto leading-relaxed">
+                Vini della Tenuta Iuzzolini e Casa Vinicola Criserà — un percorso sensoriale che unisce
+                la tradizione calabrese e l&apos;arte contemporanea della pizza.
+              </p>
+              <div className="mt-6 w-16 h-px bg-oro/40 mx-auto" />
+            </div>
+            <div className="flex flex-col gap-6">
+              {wineItems.map((wine) => <WineCard key={wine.id} wine={wine} />)}
+            </div>
+          </>
+        )}
+
+        {active !== 'dolci' && active !== 'vini' && (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {filtered.map((item) => (
               active === 'calzoni' || active === 'panuozzi' || active === 'friggitoria'
