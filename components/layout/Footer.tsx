@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import Logo from '@/components/ui/Logo'
 
 export default function Footer() {
@@ -65,6 +66,22 @@ export default function Footer() {
             className="font-inter text-xs text-grigio hover:text-rosso transition-colors"
           >
             Instagram →
+          </a>
+        </div>
+
+        <div className="mt-4 pt-4 border-t border-border/50 flex justify-center items-center gap-1.5">
+          <span className="font-inter text-xs text-grigio/50">Realizzato con</span>
+          <Image src="/e-2lab-cuore.gif" alt="cuore" width={18} height={18} unoptimized />
+          <span className="font-inter text-xs text-grigio/50">+</span>
+          <Image src="/e-2lab-cervello.gif" alt="cervello" width={18} height={18} unoptimized />
+          <span className="font-inter text-xs text-grigio/50">da</span>
+          <a
+            href="http://e-2lab.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-inter text-xs font-semibold text-grigio/70 hover:text-bianco transition-colors"
+          >
+            E-2 Lab
           </a>
         </div>
       </div>
