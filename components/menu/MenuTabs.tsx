@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { menuItems, categories, MenuCategory, MenuItem } from '@/data/menu'
 import MenuCard from './MenuCard'
@@ -44,6 +44,14 @@ const POPPELLA_IDS = ['fiocchi-neve']
 export default function MenuTabs() {
   const [active, setActive] = useState<MenuCategory | 'all'>('antipasti')
   const [dolciOpen, setDolciOpen] = useState(false)
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search)
+    const tab = params.get('tab')
+    if (tab && categories.some((c) => c.id === tab)) {
+      setActive(tab as MenuCategory)
+    }
+  }, [])
 
   const filtered = active === 'all' ? menuItems : menuItems.filter((item) => item.category === active)
 

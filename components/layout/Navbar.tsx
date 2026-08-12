@@ -9,6 +9,7 @@ import Logo from '@/components/ui/Logo'
 const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/menu', label: 'Menu' },
+  { href: '/menu?tab=vini', label: 'Carta dei Vini' },
   { href: '/prenota', label: 'Prenota' },
 ]
 
