@@ -70,11 +70,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-4 pt-4 border-t border-border/50 flex justify-center items-center gap-1.5">
-          <span className="font-inter text-xs text-grigio/50">Realizzato con</span>
-          <Image src="/e-2lab-cuore.gif" alt="cuore" width={18} height={18} unoptimized />
-          <span className="font-inter text-xs text-grigio/50">+</span>
-          <Image src="/e-2lab-cervello.gif" alt="cervello" width={18} height={18} unoptimized />
-          <span className="font-inter text-xs text-grigio/50">da</span>
+          <span className="font-inter text-xs text-grigio/50">Realizzato con ❤️ + 🧠 da</span>
           <a
             href="http://e-2lab.com"
             target="_blank"
