@@ -314,7 +314,7 @@ export const menuItems: MenuItem[] = [
     name: 'Hiroshima',
     description: 'Pomodoro San Marzano DOP, fiordilatte di Agerola, pancetta, melanzane, pecorino, peperoncino piccante, olio d\'oliva, basilico',
     price: 9.5,
-    category: 'pregiate',
+    category: 'fusion',
     image: '/images/menu/hiroshima.jpg',
   },
   {
@@ -330,7 +330,7 @@ export const menuItems: MenuItem[] = [
     name: 'Purpettella',
     description: 'Ragù di pomodoro San Marzano DOP, fiordilatte di Agerola, ciuffi di ricotta, polpette, basilico, olio d\'oliva',
     price: 8.5,
-    category: 'pregiate',
+    category: 'fusion',
     image: '/images/menu/purpettella.jpg',
   },
   {
@@ -338,7 +338,7 @@ export const menuItems: MenuItem[] = [
     name: 'Pesto',
     description: 'Provola di Agerola affumicata, pesto di basilico, pomodorini pachino, patate lesse, olio d\'oliva',
     price: 8.5,
-    category: 'pregiate',
+    category: 'fusion',
     image: '/images/menu/pesto.jpg',
   },
   {
@@ -346,7 +346,7 @@ export const menuItems: MenuItem[] = [
     name: 'Sciurillona',
     description: 'Provola di Agerola affumicata, fiori di zucca, ciuffi di ricotta, salame Napoli, basilico, olio d\'oliva',
     price: 8.5,
-    category: 'pregiate',
+    category: 'fusion',
     image: '/images/menu/sciurillona.jpg',
   },
   {
@@ -354,7 +354,7 @@ export const menuItems: MenuItem[] = [
     name: 'Parmigiana',
     description: 'Parmigiana di melanzane, provola di Agerola affumicata, basilico, olio d\'oliva',
     price: 9.5,
-    category: 'pregiate',
+    category: 'fusion',
     image: '/images/menu/parmigiana.jpg',
   },
   {
@@ -362,7 +362,7 @@ export const menuItems: MenuItem[] = [
     name: 'Scostumata',
     description: 'Provola di Agerola affumicata, patate viola, pancetta, basilico, olio d\'oliva',
     price: 8.5,
-    category: 'pregiate',
+    category: 'fusion',
     image: '/images/menu/scostumata.jpg',
   },
   {
