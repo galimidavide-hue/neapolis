@@ -27,7 +27,7 @@ export const wineItems: WineItem[] = [
     typeLabel: 'Bianco Strutturato',
     grapes: 'Greco Bianco',
     producer: 'Tenuta Iuzzolini',
-    price: 20,
+    price: 18,
     description:
       "Un bianco minerale e complesso, con sfumature agrumate che si fondono perfettamente con l'olio al bergamotto. Fresco, elegante e sapido, racconta il legame tra terra e mare — proprio come la costa ionica da cui nasce.",
     pairing: {
@@ -81,7 +81,7 @@ export const wineItems: WineItem[] = [
     typeLabel: 'Rosso Fresco',
     grapes: 'Gaglioppo & Magliocco',
     producer: 'Tenuta Iuzzolini',
-    price: 20,
+    price: 18,
     description:
       "Un rosso giovane, fragrante e di medio corpo, con note di frutti rossi e spezie leggere. La sua acidità vivace bilancia la frittura e la cremosità della fonduta. Fresco, versatile e autentico, esalta la cucina calabrese contemporanea.",
     pairing: {
