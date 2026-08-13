@@ -322,7 +322,7 @@ export const menuItems: MenuItem[] = [
     name: 'Crocchettona',
     description: 'Fiordilatte di Agerola, prosciutto cotto, crocchè di patate, basilico, olio d\'oliva',
     price: 10,
-    category: 'pregiate',
+    category: 'fusion',
     image: '/images/menu/crocchettona.jpg',
   },
   {
