@@ -49,6 +49,11 @@ export default function Footer() {
                   +39 353 319 9458
                 </a>
               </li>
+              <li>
+                <a href="mailto:neapolis.srls@libero.it" className="hover:text-rosso transition-colors">
+                  neapolis.srls@libero.it
+                </a>
+              </li>
               <li>Lun–Dom: 18:00–00:00</li>
               <li className="text-rosso/70">Chiuso il Martedì</li>
             </ul>
