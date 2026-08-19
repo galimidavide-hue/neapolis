@@ -3,8 +3,28 @@
 @tailwind utilities;
 
 @layer base {
+  /* Blocca il pan orizzontale su mobile: qualunque elemento che sborda
+     (decorazioni assolute, animazioni Framer Motion con translate su X)
+     viene ritagliato invece di allargare il documento.
+     `clip` non crea uno scroll container, quindi `position: sticky`
+     (tab del menu) continua a funzionare; `hidden` resta come fallback
+     per i browser piu' vecchi. */
+  html {
+    overflow-x: clip;
+  }
+
   body {
     @apply bg-nero text-bianco font-inter;
+    overflow-x: clip;
+  }
+
+  /* Fallback per Safari < 16, che non supporta `overflow: clip`.
+     Impostato solo su <html>: si propaga al viewport, quindi
+     `position: sticky` continua a funzionare. */
+  @supports not (overflow: clip) {
+    html {
+      overflow-x: hidden;
+    }
   }
 
   h1, h2, h3, h4 {
