@@ -5,6 +5,7 @@ const partners = [
   { name: 'Poppella Pasticceria',src: '/images/partners/poppella.png',            bg: 'bg-white' },
   { name: 'Latteria Sorrentina', src: '/images/partners/latteria-sorrentina.png', bg: 'bg-white' },
   { name: 'Astorino Gelateria',  src: '/images/partners/astorino.jpg',            bg: 'bg-nero'  },
+  { name: 'Molino Vigevano',     src: '/images/partners/molino-vigevano.png',     bg: 'bg-white' },
 ]
 
 export default function Partner() {
