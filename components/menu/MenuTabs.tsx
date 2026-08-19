@@ -72,12 +72,12 @@ export default function MenuTabs() {
             </select>
           </div>
           {/* Desktop: tab bar */}
-          <div className="hidden md:flex overflow-x-auto gap-0 scrollbar-hide">
+          <div className="hidden md:flex flex-wrap gap-0">
             {categories.map((cat) => (
               <button
                 key={cat.id}
                 onClick={() => setActive(cat.id)}
-                className={`flex-shrink-0 font-inter text-sm font-medium px-6 py-4 border-b-2 transition-all ${
+                className={`font-inter text-sm font-medium px-4 py-3 border-b-2 transition-all ${
                   active === cat.id ? 'border-rosso text-rosso' : 'border-transparent text-grigio hover:text-bianco'
                 }`}
               >
