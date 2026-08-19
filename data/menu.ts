@@ -729,6 +729,15 @@ export const menuItems: MenuItem[] = [
     featured: true,
   },
   {
+    id: 'premiata-2026',
+    name: 'Premiata 2026',
+    description: 'Vellutata di pomodoro giallo, stracciatella, pomodorini rossi e gialli semi dry, acciughe del Cantabrico, terra di olive, burrata di Andria su letto di rucola, colatura di alici',
+    price: 16,
+    category: 'premium',
+    image: '/images/menu/premiata.jpg',
+    featured: true,
+  },
+  {
     id: 'polpo',
     name: 'Polpo',
     description: 'Crema di stracciatella, polpo arrosto aromatizzato al bergamotto, pomodorini del Piennolo del Vesuvio caramellati, burrata di Andria su letto di rucola',
