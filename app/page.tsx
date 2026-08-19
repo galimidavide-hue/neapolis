@@ -6,6 +6,7 @@ import Recensioni from '@/components/home/Recensioni'
 import Gallery from '@/components/home/Gallery'
 import Contatti from '@/components/home/Contatti'
 import Premi from '@/components/home/Premi'
+import Partner from '@/components/home/Partner'
 
 export default function HomePage() {
   return (
@@ -17,6 +18,7 @@ export default function HomePage() {
       <Filosofia />
       <Recensioni />
       <Gallery />
+      <Partner />
       <Contatti />
     </>
   )

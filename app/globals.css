@@ -13,6 +13,11 @@
 
 }
 
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
 @layer utilities {
   .text-shadow-red {
     text-shadow: 0 0 40px rgba(230, 59, 46, 0.4);
