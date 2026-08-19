@@ -4,6 +4,7 @@ export type MenuCategory =
   | 'classiche'
   | 'fusion'
   | 'pregiate'
+  | 'premium'
   | 'calzoni'
   | 'panuozzi'
   | 'fritte'
@@ -724,6 +725,7 @@ export const categories: { id: MenuCategory; label: string }[] = [
   { id: 'classiche', label: 'Classiche' },
   { id: 'fusion', label: 'Fusion Mediterranee' },
   { id: 'pregiate', label: 'Le Pregiate' },
+  { id: 'premium', label: 'Pizze Premium' },
   { id: 'calzoni', label: 'Calzoni' },
   { id: 'panuozzi', label: 'Panuozzi' },
   { id: 'fritte', label: 'Pizze Fritte' },
