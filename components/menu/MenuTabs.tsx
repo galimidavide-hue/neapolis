@@ -96,9 +96,9 @@ export default function MenuTabs() {
             <path strokeLinecap="round" strokeLinejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
           </svg>
           <div>
-            <p className="font-playfair text-base font-bold text-oro mb-0.5">Pizza al Metro — anche da asporto</p>
+            <p className="font-playfair text-base font-bold text-oro mb-0.5">Pizza al Metro — solo da asporto e per eventi</p>
             <p className="font-inter text-sm text-grigio/80 leading-relaxed">
-              La nostra pizza è disponibile anche <span className="text-bianco font-semibold">al metro</span> per feste ed eventi. Contattaci per il tuo ordine.
+              La nostra pizza è disponibile <span className="text-bianco font-semibold">al metro esclusivamente da asporto</span>, ideale per feste ed eventi. Contattaci per organizzare il tuo ordine.
             </p>
           </div>
         </div>
