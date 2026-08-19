@@ -717,6 +717,17 @@ export const menuItems: MenuItem[] = [
     category: 'dolci',
     image: '/images/menu/setteveli.jpg',
   },
+
+  // PIZZE PREMIUM
+  {
+    id: 'nera-di-calabria',
+    name: 'Nera di Calabria 2.0',
+    description: 'Crema di porcini e fiordilatte, olio tartufato, filetto di maialino nero di Calabria su ciuffi di stracciatella, pomodorino giallo confit, terra d\'olive e burrata affumicata',
+    price: 16,
+    category: 'premium',
+    image: '/images/menu/nera-di-calabria.png',
+    featured: true,
+  },
 ]
 
 export const categories: { id: MenuCategory; label: string }[] = [
