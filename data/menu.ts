@@ -729,6 +729,15 @@ export const menuItems: MenuItem[] = [
     featured: true,
   },
   {
+    id: 'polpo',
+    name: 'Polpo',
+    description: 'Crema di stracciatella, polpo arrosto aromatizzato al bergamotto, pomodorini del Piennolo del Vesuvio caramellati, burrata di Andria su letto di rucola',
+    price: 18,
+    category: 'premium',
+    image: '/images/menu/polpo.png',
+    featured: true,
+  },
+  {
     id: 'nera-di-calabria',
     name: 'Nera di Calabria 2.0',
     description: 'Crema di porcini e fiordilatte, olio tartufato, filetto di maialino nero di Calabria su ciuffi di stracciatella, pomodorino giallo confit, terra d\'olive e burrata affumicata',
