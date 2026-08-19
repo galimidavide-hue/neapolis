@@ -721,9 +721,9 @@ export const menuItems: MenuItem[] = [
   // PIZZE PREMIUM
   {
     id: 'passione-gamberi',
-    name: 'Passione Gamberi',
+    name: 'Mazzara',
     description: 'Fior di latte di Agerola, formaggio spalmabile, Gambero Rosso di Mazara del Vallo, valeriana fresca, essenza di tartufo, corallo di pane',
-    price: 16,
+    price: 18,
     category: 'premium',
     image: '/images/menu/passione-gamberi.png',
     featured: true,
@@ -732,7 +732,7 @@ export const menuItems: MenuItem[] = [
     id: 'nera-di-calabria',
     name: 'Nera di Calabria 2.0',
     description: 'Crema di porcini e fiordilatte, olio tartufato, filetto di maialino nero di Calabria su ciuffi di stracciatella, pomodorino giallo confit, terra d\'olive e burrata affumicata',
-    price: 16,
+    price: 18,
     category: 'premium',
     image: '/images/menu/nera-di-calabria.png',
     featured: true,
