@@ -72,7 +72,7 @@ export default function MenuTabs() {
             </select>
           </div>
           {/* Desktop: tab bar */}
-          <div className="hidden md:flex flex-wrap gap-0">
+          <div className="hidden md:flex flex-wrap gap-0 justify-center">
             {categories.map((cat) => (
               <button
                 key={cat.id}
