@@ -721,7 +721,7 @@ export const menuItems: MenuItem[] = [
   // PIZZE PREMIUM
   {
     id: 'passione-gamberi',
-    name: 'Mazzara',
+    name: 'Mazara',
     description: 'Fior di latte di Agerola, formaggio spalmabile, Gambero Rosso di Mazara del Vallo, valeriana fresca, essenza di tartufo, corallo di pane',
     price: 18,
     category: 'premium',
