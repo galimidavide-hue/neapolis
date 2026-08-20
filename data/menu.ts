@@ -720,9 +720,18 @@ export const menuItems: MenuItem[] = [
 
   // PIZZE PREMIUM
   {
+    id: 'tartare',
+    name: 'Tartare',
+    description: 'Tartare di scampi, perle di lombo e bergamotto su base di crema di stracciatella e burrata di Andria',
+    price: 18,
+    category: 'premium',
+    image: '/images/menu/tartare.jpg',
+    featured: true,
+  },
+  {
     id: 'passione-gamberi',
     name: 'Mazara',
-    description: 'Fior di latte di Agerola, formaggio spalmabile, Gambero Rosso di Mazara del Vallo, valeriana fresca, essenza di tartufo, corallo di pane',
+    description: 'Fior di latte di Agerola, stracciatella di bufala, Gambero Rosso di Mazara del Vallo, valeriana fresca, essenza di tartufo, corallo di pane',
     price: 18,
     category: 'premium',
     image: '/images/menu/passione-gamberi.png',
