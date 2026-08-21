@@ -731,7 +731,7 @@ export const menuItems: MenuItem[] = [
   {
     id: 'passione-gamberi',
     name: 'Mazara',
-    description: 'Fior di latte di Agerola, stracciatella di bufala, Gambero Rosso di Mazara del Vallo, valeriana fresca, essenza di tartufo, corallo di pane',
+    description: 'Un viaggio tra la profondità del mare e l\'intensità della terra. Il Gambero Rosso di Mazara del Vallo, protagonista assoluto, incontra la setosità della stracciatella di bufala. La valeriana fresca dona una nota verde e balsamica, mentre l\'essenza di tartufo introduce una profondità aromatica elegante e persistente. A chiudere la composizione, il corallo di pane, croccante e leggero, aggiunge texture e carattere. Una pizza contemporanea, costruita sull\'equilibrio tra dolcezza marina, cremosità e intensità aromatica.',
     price: 18,
     category: 'premium',
     image: '/images/menu/passione-gamberi.png',
