@@ -722,7 +722,7 @@ export const menuItems: MenuItem[] = [
   {
     id: 'tartare',
     name: 'Tartare',
-    description: 'Tartare di scampi, perle di lombo e bergamotto su base di crema di stracciatella e burrata di Andria',
+    description: 'Una creazione firmata Neapolis, dove la tradizione napoletana incontra l\'eleganza del Mar Mediterraneo. Tartare di scampi al bergamotto di Calabria, zest di limone e perle di lompo, accompagnata dalla cremosità di stracciatella e Burrata di Andria, su un delicato letto di rucola fresca. Un equilibrio raffinato tra dolcezza, sapidità, freschezza e note agrumate.',
     price: 18,
     category: 'premium',
     image: '/images/menu/tartare.jpg',
